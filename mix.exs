@@ -28,7 +28,8 @@ defmodule Quack.MixProject do
       {:tesla, "~> 1.2.0"},
       {:credo, "~> 0.10.2", only: [:dev, :test], runtime: false},
       {:excoveralls, "~> 0.10.2", only: [:test, :dev]},
-      {:poison, ">= 1.0.0"}
+      {:poison, ">= 1.0.0"},
+      {:ex_doc, ">= 0.0.0", only: :dev}
     ]
   end
 
