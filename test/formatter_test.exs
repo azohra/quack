@@ -9,7 +9,7 @@ defmodule FormatterTest do
   @message %{
     attachments: [
       %{
-        author_link: "https://github.com/MatthewNielsen27/quack",
+        author_link: "https://github.com/azohra/quack",
         author_name: "Quack - Elixir logging for Slack",
         color: "#00B4FF",
         fields: [
@@ -36,7 +36,7 @@ defmodule FormatterTest do
   @message_with_meta %{
     attachments: [
       %{
-        author_link: "https://github.com/MatthewNielsen27/quack",
+        author_link: "https://github.com/azohra/quack",
         author_name: "Quack - Elixir logging for Slack",
         color: "#00B4FF",
         fields: [
