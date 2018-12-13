@@ -8,6 +8,7 @@ defmodule Quack do
     import Supervisor.Spec, warn: false
 
     children = [
+      worker(Quack.Mama, []),
       worker(Quack.Duckling, [])
     ]
 

@@ -7,8 +7,7 @@ defmodule Quack.Messenger do
   @doc """
   Function to send message to slack webhook
   """
-  def send(msg) do 
-    webhook = Application.get_env(:quack, :webhook_url)
-    post(webhook, msg)
+  def send(url, msg) do
+    post(url, msg)
   end
 end

@@ -1,7 +1,7 @@
 defmodule Quack.Logger do
   @moduledoc false
 
-  alias Quack.Duckling
+  alias Quack.Mama
 
   @behaviour :gen_event
 
@@ -42,7 +42,7 @@ defmodule Quack.Logger do
 
     params = {lvl, msg, ts, take_params(meta, specified)}
 
-    if valid_priority(lvl, base_level), do: Duckling.quack(params)
+    if valid_priority(lvl, base_level), do: Mama.process(params)
 
     {:ok, state}
   end
